@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f8f8; /* Cor de fundo do corpo */
 }
 
 section {
@@ -10,14 +11,15 @@ section {
 }
 
 h1, h2 {
-    color: #333;
+    color: #000; /* Cor do texto para cabeçalhos */
 }
 
 a {
-    color: #007BFF;
+    color: #0070c9; /* Cor padrão para links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #005aa0; /* Cor do link durante o hover */
 }
