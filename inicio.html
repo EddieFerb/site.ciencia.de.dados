@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Fernandes Bueno - Currículo</title>
+    <!-- Adicionando Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adicionando seu arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        body {
+            font-family: 'San Francisco', Arial, sans-serif;
+            background-color: black;
+            color: silver;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            background-color: grey;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: white;
+        }
+
+        .navbar {
+            background-color: black;
+        }
+
+        .navbar-brand, .navbar-nav a {
+            color: silver;
+            font-weight: bold;
+        }
+
+        .navbar-nav a:hover {
+            color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: silver;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #555;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        /* Estilos específicos para o vídeo e descrição */
+        .video-section {
+            float: left;
+            width: 50%;
+        }
+
+        .descricao-section {
+            float: right;
+            width: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .video-section,
+            .descricao-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">Eduardo Fernandes Bueno</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#index">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#objetivos">Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#atuaçao">Atuação Profissional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacao">Formação Acadêmica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lingua">Língua Estrangeira</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#computacao">Computação & Informática</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#redes">Redes Sociais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#associacao">Associações</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo do Currículo -->
+    <!-- Página 1: INDEX -->
+    <section id="index" class="container mt-5">
+        <!-- Duas seções: uma para o vídeo do YouTube e outra para a descrição -->
+        <div class="video-section">
+            <!-- Vídeo do YouTube aqui -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&volume=20" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="descricao-section">
+            <h1 class="mb-4">EDUARDO FERNANDES BUENO</h1>
+            <!-- Descrição escrita aqui -->
+            <p><strong>DADOS PESSOAIS</strong></p>
+            <p>Idade: 40 anos | Gênero masculino<br>
+            Estado Civil: União estável</p>
+
+            <p><strong>CONTATO & ENDEREÇO</strong></p>
+            <p>Celular | WhatsApp: + 55 (43) 98812-7241<br>
+            e-mail: buenofernandeseduardo@gmail.com<br>
+            LinkedIn: linkedin.com/in/eduardofernandesbueno<br>
+            Site: <a href="https://eddieferb.github.io/" target="_blank">https://eddieferb.github.io/</a><br>
+            Endereço: Avenida Clementino Ettore Luvisotto, no 139, Vila Áurea, Londrina | PR | Brasil.</p>
+        </div>
+    </section>
+
+    <!-- Adicionando Bootstrap JS e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
