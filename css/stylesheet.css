@@ -20,8 +20,10 @@
       float: none; /* Cancela a flutuação para empilhar em dispositivos móveis */
   }
 }
-
 .descricao-section h1 {
-    font-size: 12px; /* Tamanho desejado para h1 */
+    /* Outros estilos, se necessário */
+}
+
+.descricao-section h2 {
     /* Outros estilos, se necessário */
 }
