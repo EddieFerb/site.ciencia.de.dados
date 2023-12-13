@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos & Redes - Eduardo Fernandes Bueno</title>
+    <title>Projetos & Redes - Eduardo Fernandes Bueno | Projetos & Redes</title>
     <!-- Adicionando Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Adicionando seu arquivo CSS -->
@@ -39,7 +39,7 @@
 <body>
 <!-- Barra de Navegação Bootstrap -->
 <nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="index.html">Eduardo Fernandes Bueno</a>
+    <a class="navbar-brand" href="index.html">Eduardo Fernandes Bueno | <strong>Projetos & Redes</strong> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,13 +49,13 @@
                 <a class="nav-link" href="index.html">Início</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="sobre.html">Sobre Mim</a>
+                <a class="nav-link" href="2_SOBRE.html">Sobre Mim</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="curriculo.html">Currículo</a>
+                <a class="nav-link" href="3_CURRICULO.html">Currículo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="projetos-redes.html">Projetos e Redes</a>
+                <a class="nav-link" href="4_PROJETOS-REDES.html">Projetos e Redes</a>
             </li>
         </ul>
     </div>
@@ -70,14 +70,14 @@
         </div>
 
             <h2>Projeto Integrador (P.I.)</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduando 3º ano (6º semestre) no <b>Eixo Computação</b>, com ênfase <b>Ciência de Dados</b> (UNIVESP, 2021), tenho conhecimentos práticos: em desenvolvimento <i>web</i> (<i>HTML</i>, <i>PHP</i>, <i>Python</i>, <i>CSS</i> e <i>frameworks</i>), C/C++, e banco de dados (<i>SQL</i>). Por exemplo:</p>
             <ul>
-                <li>Graduando 3º ano em Computação, ênfase Ciência de Dados (UNIVESP, 2021), com conhecimentos práticos: desenvolvimento <i>web</i> (<i>HTML</i>, <i>PHP</i>, <i>Python</i>, <i>CSS</i> e <i>frameworks</i>), C/C++, e banco de dados (<i>SQL</i>).</li>
                 <li>P.I. 1: ‘desenvolvimento de um <i>software</i> com <i>framework web</i> que utilize noções de banco de dados, praticando controle de versão.’ Disponível em: <a href="https://github.com/EddieFerb/Projeto-Integrador-1-Univesp.git" target="_blank">github.com/EddieFerb/Projeto-Integrador-1-Univesp.git</a></li>
                 <li>P.I. 2: ‘desenvolver um <i>software</i> com <i>framework web</i> que utilize banco de dados, inclua <i>script web</i>  (<i>Javascript</i>), nuvem, uso de <i>API</i>, acessibilidade, controle de versão e testes.’ Disponível em: <a href="https://github.com/EddieFerb/Projeto-Integrador-2-Univesp.git" target="_blank">github.com/EddieFerb/Projeto-Integrador-2-Univesp.git</a></li>
                 <li>Conhecimentos teóricos em Mineração de dados, Engenharia de software, Estrutura de dados, Sistemas  computacionais, Gestão da inovação e desenvolvimento de produtos, algoritmos e outros.</li>
             </ul>
  <div class="descricao-section">
-            <h1>Atuação Profissional</h1>
+            <h2>Atuação Profissional</h2>
             <ul>
                 <li><strong>Instituto Brasileiro de Executivos de Finanças (IBEF SP), São Paulo, Brasil</strong><br>
                     Vínculo: Assistente de comunicação.<br>
@@ -99,7 +99,7 @@
             </ul>
         </div>
         <div class="descricao-section">
-            <h1>Associação em Instituições</h1>
+            <h2>Associação em Instituições</h2>
             <ul>
             <li><strong>Defensoria Pública do Estado do Paraná</strong><br>
                 Desde 2018, advogado dativo do Estado do Paraná, Brasil.
@@ -111,7 +111,7 @@
         </div>
 
          <div class="descricao-section">
-            <h1>Redes Sociais</h1>
+            <h2>Redes Sociais</h2>
             <ul>
                 <li>LinkedIn: <a href="https://linkedin.com/in/eduardofernandesbueno" target="_blank">linkedin.com/in/eduardofernandesbueno</a></li>
                 <li>YouTube Channel: <a href="https://youtube.com/c/EddieFerb" target="_blank">youtube.com/c/EddieFerb</a></li>
@@ -120,6 +120,22 @@
         </div>
     </section>
 
+    <!-- Adicione os scripts abaixo ao final do seu arquivo para controlar o vídeo -->
+    <script>
+        // Função para iniciar o vídeo
+        function startVideo() {
+            var iframe = document.getElementById('youtubeVideo');
+            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+
+        // Função para parar o vídeo
+        function stopVideo() {
+            var iframe = document.getElementById('youtubeVideo');
+            iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+        }
+    </script>
+   <!-- Botão/link 'Sobre Mim' -->
+    <a href="index.html" class="btn btn-primary btn-lg btn-sobre-mim" style="position: fixed; bottom: 20px; right: 20px;">Início</a>
     <!-- Adicionando Bootstrap JS e jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>

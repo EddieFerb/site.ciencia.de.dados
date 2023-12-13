@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +26,8 @@
             border-radius: 10px;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             color: white;
         }
 
@@ -32,9 +35,10 @@
             background-color: black;
         }
 
-        .navbar-brand, .navbar-nav a {
+        .navbar-brand,
+        .navbar-nav a {
             color: silver;
-            font-weight: bold;
+            font-weight: regular;
         }
 
         .navbar-nav a:hover {
@@ -45,7 +49,7 @@
             display: none;
             position: absolute;
             background-color: black;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border-radius: 5px;
         }
@@ -72,90 +76,99 @@
 
         /* Estilos específicos para o vídeo e descrição */
         .video-section {
-            float: left;
-            width: 50%;
+            width: 100%;
         }
 
         .descricao-section {
-            float: right;
-            width: 50%;
+            width: 100%;
         }
 
-        @media (max-width: 768px) {
-            .video-section,
+        @media (min-width: 768px) {
+            /* Apenas ajustando o layout para telas maiores */
+            .video-section {
+                float: above;
+                width: 100%;
+            }
+
             .descricao-section {
+                float: below;
                 width: 100%;
             }
         }
+
+        /* Botão Sobre Mim */
+        .btn-sobre-mim {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
     </style>
 </head>
+
 <body>
-<!-- Barra de Navegação Bootstrap -->
-<nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="index.html">Eduardo Fernandes Bueno</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Início</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="2_OBJETIVOS.html">Objetivos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="3_HABILIDADES.html">Habilidades</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="4_ATUACAO.html">Atuação Profissional</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="5_FORMACAO.html">Formação Acadêmica</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="6_LINGUAS.html">Idiomas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="7_COMPUTACAO.html">Computação & Informática</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="8_REDES.html">Redes Sociais</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="9_ASSOCIACAO.html">Associações</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <!-- Barra de Navegação Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html">Eduardo Fernandes Bueno</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2_sobre.html">Sobre Mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="3_curriculo.html">Currículo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="4_projetos-redes.html">Projetos e Redes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Conteúdo do Currículo -->
     <!-- Página 1: INDEX -->
-    <section id="index" class="container mt-5">
+    <section id="index" class="container mt-5 text-center">
         <!-- Duas seções: uma para o vídeo do YouTube e outra para a descrição -->
         <div class="video-section">
             <!-- Vídeo do YouTube aqui -->
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&volume=20" frameborder="0" allowfullscreen></iframe>
+            <iframe id="youtubeVideo" width="100%" height="315"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&volume=20" frameborder="0"
+                allowfullscreen></iframe>
         </div>
 
         <div class="descricao-section">
-            <h1 class="mb-4">Eduardo Fernandes Bueno</h1>
+            <h1 class="mb-4">INÍCIO</h1>
+            <strong>A GRANDE JORNADA COMEÇA AGORA!</strong>
             <!-- Descrição escrita aqui -->
-            <strong>DADOS PESSOAIS</strong>
-            <p>Idade: 40 anos | Gênero masculino<br>
-            Estado Civil: União estável</p>
-
-            <strong>CONTATO & ENDEREÇO</strong>
-           <p>Celular | WhatsApp: <a href="https://wa.me/5543988127241" target="_blank">+55 (43) 98812-7241</a><br>
-            e-mail: <a href="mailto:buenofernandeseduardo@gmail.com">buenofernandeseduardo@gmail.com</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/eduardofernandesbueno/" target="_blank">linkedin.com/in/eduardofernandesbueno</a><br>
-            Endereço: Avenida Clementino Ettore Luvisotto, nº 139, Vila Áurea | Londrina | PR | Brasil.
         </div>
     </section>
+
+    <!-- Adicione os scripts abaixo ao final do seu arquivo para controlar o vídeo -->
+    <script>
+        // Função para iniciar o vídeo
+        function startVideo() {
+            var iframe = document.getElementById('youtubeVideo');
+            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+
+        // Função para parar o vídeo
+        function stopVideo() {
+            var iframe = document.getElementById('youtubeVideo');
+            iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+        }
+    </script>
+    <!-- Botão/link 'Sobre Mim' -->
+    <a href="2_sobre.html" class="btn btn-primary btn-lg btn-sobre-mim">Sobre mim</a>
 
     <!-- Adicionando Bootstrap JS e jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
